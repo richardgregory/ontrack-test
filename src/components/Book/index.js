@@ -16,7 +16,7 @@ export const Book = ({
       <Card.Title>{title}</Card.Title>
       <Card.Subtitle className="mb-3">{author.join(", ")}</Card.Subtitle>
       <Card.Text as="div">
-        <p className="mb-1">{`Publication: ${city}, ${country}, ${year}`}</p>
+        <p className="mb-1">{`${city}, ${country}, ${year}`}</p>
         <p className="mb-0">{`Pages: ${pages}`}</p>
       </Card.Text>
     </Card.Body>
