@@ -13,6 +13,9 @@ export const useFetchBooks = (page = 1, limit = 20) => {
       try {
         const response = await fetch("http://nyx.vima.ekt.gr:3000/api/books", {
           method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
           body: JSON.stringify({
             page,
             itemsPerPage: limit,

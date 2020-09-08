@@ -29,7 +29,7 @@ export const Books = () => {
             <Spinner
               animation="border"
               role="status"
-              className="d-block mx-auto"
+              className="d-block mx-auto mb-3"
             >
               <span className="sr-only">Loading</span>
             </Spinner>
